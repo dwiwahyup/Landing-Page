@@ -176,3 +176,185 @@ nav .register-button:hover {
 .stunting .data-item p {
   margin: 0;
 }
+
+/* ----------------------------------------------Layanan Start---------------------------------------------- */
+
+.layanan {
+  padding: 30px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: -70px;
+  margin-right: -70px;
+}
+
+.layanan h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.layanan-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  max-height: 450px;
+}
+
+.slider-open:checked + .slider-item {
+  position: static;
+  opacity: 100;
+  height: 50%;
+}
+
+.slider-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  margin-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.slider-text {
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.slider-img {
+  width: 500px;
+  height: 500px;
+  object-fit: scale-down;
+}
+
+.slider-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #ff6d6d;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slider-control.prev {
+  left: 2%;
+}
+
+.slider-control.next {
+  right: 2%;
+}
+
+.slider-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ff0000;
+}
+
+#slider-1:checked ~ .control-1,
+#slider-2:checked ~ .control-2,
+#slider-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slider-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slider-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slider-button {
+  color: #f18080;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slider-button:hover {
+  color: #aaaaaa;
+}
+
+#slider-1:checked
+  ~ .control-1
+  ~ .slider-indicators
+  li:nth-child(1)
+  .slider-button,
+#slider-2:checked
+  ~ .control-2
+  ~ .slider-indicators
+  li:nth-child(2)
+  .slider-button,
+#slider-3:checked
+  ~ .control-3
+  ~ .slider-indicators
+  li:nth-child(3)
+  .slider-button {
+  color: #428bca;
+}
+
+/* ----------------------------------------------Layanan End---------------------------------------------- */
+
+.artikel {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.artikel-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.artikel-item {
+  /* width: 360px;
+  height: 500px; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: block;
+  position: relative;
+  width: 300px;
+}
+
+.card-image {
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.card-footer {
+  margin-top: 10px;
+}
