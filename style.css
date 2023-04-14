@@ -89,6 +89,7 @@ nav .register-button:hover {
 .hero-text {
   margin-left: 50px;
   align-items: center;
+  text-align: justify;
 }
 
 .hero h1 {
@@ -104,7 +105,7 @@ nav .register-button:hover {
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -181,7 +182,7 @@ nav .register-button:hover {
 
 .layanan {
   padding: 30px;
-  position: relative;
+  position: static;
   margin-top: 20px;
   margin-left: -70px;
   margin-right: -70px;
@@ -189,7 +190,7 @@ nav .register-button:hover {
 
 .layanan h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 600;
   margin: 0;
 }
@@ -203,9 +204,8 @@ nav .register-button:hover {
 }
 
 .slider-open:checked + .slider-item {
-  position: static;
+  position: relative;
   opacity: 100;
-  height: 50%;
 }
 
 .slider-item {
@@ -221,18 +221,35 @@ nav .register-button:hover {
 }
 
 .slider-text {
-  padding-left: 20px;
-  margin-top: 50px;
+  width: 40%;
+  text-align: justify;
+}
+
+.h1-slider {
+  font-size: 32px;
+  color: #34d9bb;
+  font-weight: 700;
+  margin: 0;
+}
+
+.slider-item p {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 2;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .slider-img {
-  width: 500px;
-  height: 500px;
-  object-fit: scale-down;
+  width: 60%;
+}
+.slider-img img {
+  width: 400px;
+  height: 400px;
 }
 
 .slider-control {
-  color: #5c5c5c;
+  color: #455a64;
   cursor: pointer;
   display: none;
   font-size: 100px;
@@ -257,7 +274,6 @@ nav .register-button:hover {
 }
 
 .slider-control:hover {
-  /* background: rgba(0, 0, 0, 0.8); */
   color: #34d9bb;
 }
 
@@ -285,14 +301,14 @@ nav .register-button:hover {
 }
 
 .slider-button {
-  color: #f18080;
+  color: #c7c7c7;
   cursor: pointer;
   display: block;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .slider-button:hover {
-  color: #aaaaaa;
+  color: #34d9bb;
 }
 
 #slider-1:checked
@@ -310,7 +326,7 @@ nav .register-button:hover {
   ~ .slider-indicators
   li:nth-child(3)
   .slider-button {
-  color: #428bca;
+  color: #455a64;
 }
 
 /* ----------------------------------------------Layanan End---------------------------------------------- */
@@ -338,11 +354,8 @@ nav .register-button:hover {
 }
 
 .artikel-item {
-  /* width: 360px;
-  height: 500px; */
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  border-radius: 0px;
   padding: 20px;
   display: block;
   position: relative;
@@ -357,12 +370,53 @@ nav .register-button:hover {
   height: 200px;
 }
 
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-text {
   margin-top: 10px;
+  text-align: justify;
+}
+
+.card-text h4 {
+  color: #34d9bb;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.card-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.card-text p {
+  color: #898e8c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 5px;
 }
 
 .card-footer {
   margin-top: 10px;
+  text-align: end;
+}
+.card-footer a {
+  color: #34d9bb;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-footer a:hover {
+  color: #fca311;
 }
 
 /* ----------------------------------------------Artikel End---------------------------------------------- */
@@ -430,7 +484,7 @@ nav .register-button:hover {
 }
 
 .sosmed i:hover {
-  background-color: #1b443b;
+  background-color: #fca311;
 }
 .right-content {
   display: flex;
@@ -453,6 +507,10 @@ nav .register-button:hover {
   line-height: 2;
   margin-top: 20px;
   color: #ffffff;
+}
+
+.right-content a:hover {
+  color: #fca311;
 }
 
 .right-content ul {
@@ -503,4 +561,131 @@ nav .register-button:hover {
   line-height: 2;
   color: #ffffff;
 }
+
+.footer-down a:hover {
+  color: #fca311;
+}
 /* ----------------------------------------------Footer End---------------------------------------------- */
+
+/* ----------------------------------------------Form Start---------------------------------------------- */
+
+.form {
+  padding: 30px;
+  margin-top: 20px;
+  /* position: relative; */
+  max-width: 700px;
+  padding-left: 300px;
+}
+
+.form h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #1b443b;
+}
+
+.validation-form {
+  padding: 20px;
+  width: 100%;
+}
+
+.validation-form input[type="text"],
+[type="email"],
+[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.validation-form input [type="text"]:focus,
+[type="number"]:focus,
+[type="email"]:focus {
+  outline: none;
+  border: 2px solid #34d9bb;
+  font-weight: 400;
+}
+
+.validation-form input[type="checkbox"],
+select {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.validation-form input[type="checkbox"]:focus {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.validation-form label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1b443b;
+  align-content: center;
+}
+
+.validation-form button {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #34d9bb;
+  border-radius: 8px;
+  color: #34d9bb;
+  font-weight: bold;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.validation-form button:hover {
+  background-color: #34d9bb;
+  color: #fff;
+}
+/* ----------------------------------------------Form End---------------------------------------------- */
+
+/* ----------------------------------------------Deskripsi Start---------------------------------------------- */
+
+.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+.desc h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1b443b;
+}
+
+.desc h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #34d9bb;
+}
+
+.desc p {
+  font-size: 16px;
+  font-weight: 50;
+  color: #898e8c;
+}
+
+.desc a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #34d9bb;
+}
+
+.desc a:hover {
+  color: #fca311;
+}
+
+/* ----------------------------------------------Deskripsi End---------------------------------------------- */
