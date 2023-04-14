@@ -218,7 +218,6 @@ nav .register-button:hover {
   padding-right: 150px;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 .slider-text {
@@ -233,13 +232,11 @@ nav .register-button:hover {
 }
 
 .slider-control {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 50%;
-  color: #ff6d6d;
+  color: #5c5c5c;
   cursor: pointer;
   display: none;
-  font-size: 40px;
-  height: 40px;
+  font-size: 100px;
+  height: 50px;
   line-height: 35px;
   position: absolute;
   top: 50%;
@@ -248,8 +245,7 @@ nav .register-button:hover {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
-  width: 40px;
-  z-index: 10;
+  /* width: 40px; */
 }
 
 .slider-control.prev {
@@ -261,8 +257,8 @@ nav .register-button:hover {
 }
 
 .slider-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #ff0000;
+  /* background: rgba(0, 0, 0, 0.8); */
+  color: #34d9bb;
 }
 
 #slider-1:checked ~ .control-1,
@@ -319,9 +315,18 @@ nav .register-button:hover {
 
 /* ----------------------------------------------Layanan End---------------------------------------------- */
 
+/* ----------------------------------------------Artikel Start---------------------------------------------- */
+
 .artikel {
   padding: 30px;
   margin-top: 20px;
+  position: relative;
+}
+.artikel h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .artikel-list {
@@ -345,6 +350,7 @@ nav .register-button:hover {
 }
 
 .card-image {
+  margin: -20px;
   margin-bottom: 0;
   overflow: hidden;
   position: relative;
@@ -358,3 +364,143 @@ nav .register-button:hover {
 .card-footer {
   margin-top: 10px;
 }
+
+/* ----------------------------------------------Artikel End---------------------------------------------- */
+
+/* ----------------------------------------------Footer Start---------------------------------------------- */
+
+.footer {
+  padding-top: 70px;
+  margin-top: 20px;
+  position: relative;
+  margin-left: -100px;
+  margin-right: -100px;
+  background-color: #1b443b;
+}
+
+.footer hr {
+  border: 1px solid #c9d9d2;
+  border-radius: 30px;
+  max-width: 1400px;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: -40px; */
+}
+
+.footer-up img {
+  width: 200px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.left-content {
+  width: 700px;
+  margin-left: -20px;
+  display: inline-block;
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.left-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.sosmed i {
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #1b443b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+}
+
+.sosmed i:hover {
+  background-color: #1b443b;
+}
+.right-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: -30px;
+}
+
+.right-content p {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 2;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.right-content a {
+  font-size: 16px;
+  font-weight: 50;
+  line-height: 2;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.right-content ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 3;
+}
+
+.right-content ul a {
+  text-decoration: none;
+}
+
+.footer-link i {
+  margin-right: 10px;
+}
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.footer-down p {
+  font-size: 16px;
+  font-weight: 50;
+  line-height: 2;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.footer-down a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 50;
+  line-height: 2;
+  color: #ffffff;
+}
+/* ----------------------------------------------Footer End---------------------------------------------- */
